@@ -179,6 +179,11 @@ function applyTranslations() {
       card.querySelector('p').textContent = d.desc;
       const link = card.querySelector('.read-more');
       if (link) link.href = 'blog-post.html?slug=' + d.slug;
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('.read-more')) return;
+        window.location.href = 'blog-post.html?slug=' + d.slug;
+      });
     }
   });
 

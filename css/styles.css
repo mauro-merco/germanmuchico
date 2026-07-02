@@ -602,6 +602,7 @@ body {
   overflow: hidden;
   transition: var(--transition);
   cursor: pointer;
+  cursor: pointer;
 }
 
 .blog-card:hover {
