@@ -1,11 +1,54 @@
 const translations = {
   es: {
     nav: {
-      about: "Acerca de",
-      trajectory: "Trayectoria",
+      inicio: "Inicio",
+      trayectoria: "Trayectoria",
+      servicios: "Servicios",
+      clientes: "Clientes",
+      empresa: "Empresa",
+      casos: "Casos de Éxito",
       blog: "Blog",
-      social: "Redes",
-      contact: "Contacto"
+      contacto: "Contacto"
+    },
+    servicios: {
+      tag: "Servicios",
+      title: "Soluciones en ",
+      titleHighlight: "logística global",
+      subtitle: "Ofrecemos servicios integrales de logística internacional, comercio exterior y consultoría estratégica para empresas que quieren expandir sus horizontes.",
+      items: [
+        { title: "Transporte Multimodal", desc: "Gestión integrada de transporte marítimo, aéreo y terrestre. Optimizamos rutas, costos y tiempos para garantizar que tu carga llegue a destino de forma eficiente y segura." },
+        { title: "Despacho Aduanero", desc: "Tramitación integral de despachos de importación y exportación. Gestionamos toda la documentación necesaria ante las autoridades aduaneras de cada país." },
+        { title: "Consultoría en Supply Chain", desc: "Análisis y optimización de cadenas de suministro. Identificamos cuellos de botella, reducimos costos operativos y mejoramos la eficiencia logística de tu empresa." },
+        { title: "Búsqueda de Proveedores", desc: "Identificación y selección de proveedores internacionales. Evaluamos calidad, confiabilidad y costos para conectar tu negocio con los mejores partners globales." },
+        { title: "Trading con China", desc: "Servicio integral de comercio con China. Coordinación aduanera origen-destino, gestión de calidades y logística puerta a puerta para pymes latinoamericanas." },
+        { title: "Logística de Almacenamiento", desc: "Soluciones de almacenamiento y distribución en ubicaciones estratégicas (Argentina, USA, Brasil). Inventarios, picking y despacho integrados." }
+      ]
+    },
+    clientes: {
+      tag: "Clientes",
+      title: "Confían en ",
+      titleHighlight: "nosotros",
+      subtitle: "Empresas de diversos sectores confían en CargoNet Group para sus operaciones de comercio internacional. Nuestra experiencia es su mejor garantía.",
+      items: [
+        { text: "Empresas de logística y distribución en Argentina, Brasil y USA que tercerizan sus operaciones internacionales." },
+        { text: "Pymes exportadoras de Latinoamérica que buscan expandir su alcance a mercados de Europa, Asia y Norteamérica." },
+        { text: "Corporaciones multinacionales que requieren soluciones integradas de supply chain con presencia regional." },
+        { text: "Empresas del sector agroindustrial que necesitan transporte especializado y gestión aduanera eficiente." },
+        { text: "Startups y scaleups tecnológicas con operaciones de comercio exterior que requieren agilidad y confiabilidad." },
+        { text: "Asociaciones y cámaras de comercio que confían en nuestra experiencia para asesorar a sus miembros." }
+      ]
+    },
+    casos: {
+      tag: "Casos de Éxito",
+      title: "Historias de ",
+      titleHighlight: "éxito",
+      subtitle: "Conocé algunos casos donde nuestra experiencia en logística internacional marcó la diferencia para nuestros clientes.",
+      items: [
+        { title: "Expansión a EE.UU. para un fabricante argentino", desc: "Acompañamos a una pyme metalúrgica argentina en su proceso de exportación a Estados Unidos. Gestionamos todo el despacho aduanero, logística multimodal y certificaciones requeridas. Hoy exportan 3 contenedores mensuales." },
+        { title: "Optimización de supply chain para retail brasileño", desc: "Rediseñamos la cadena de suministro de una cadena de retail brasileña con operaciones en Argentina. Redujimos un 30% los tiempos de tránsito y un 22% los costos logísticos totales." },
+        { title: "Corredor logístico Argentina-China", desc: "Implementamos un servicio puerta a puerta para una cooperativa agrícola que buscaba exportar a China. Coordinamos controles de calidad, documentación fitosanitaria y logística oceánica con seguimiento en tiempo real." },
+        { title: "Consultoría estratégica para expansión regional", desc: "Asesoramos a una empresa de tecnología uruguaya en su plan de expansión a Brasil y México. Diseñamos su red logística, identificamos socios estratégicos y optimizamos sus procesos aduaneros." }
+      ]
     },
     hero: {
       badge: "CEO & Fundador de CargoNet Group",
@@ -82,11 +125,54 @@ const translations = {
 
   en: {
     nav: {
-      about: "About",
-      trajectory: "Career",
+      inicio: "Home",
+      trayectoria: "Career",
+      servicios: "Services",
+      clientes: "Clients",
+      empresa: "Company",
+      casos: "Success Stories",
       blog: "Blog",
-      social: "Social",
-      contact: "Contact"
+      contacto: "Contact"
+    },
+    servicios: {
+      tag: "Services",
+      title: "Global ",
+      titleHighlight: "logistics solutions",
+      subtitle: "We offer comprehensive international logistics, foreign trade and strategic consulting services for companies looking to expand their horizons.",
+      items: [
+        { title: "Multimodal Transport", desc: "Integrated management of maritime, air and land transport. We optimize routes, costs and times to ensure your cargo reaches its destination efficiently and safely." },
+        { title: "Customs Clearance", desc: "Comprehensive import and export customs clearance. We manage all necessary documentation with each country's customs authorities." },
+        { title: "Supply Chain Consulting", desc: "Analysis and optimization of supply chains. We identify bottlenecks, reduce operating costs and improve your company's logistics efficiency." },
+        { title: "Supplier Sourcing", desc: "Identification and selection of international suppliers. We evaluate quality, reliability and costs to connect your business with the best global partners." },
+        { title: "Trading with China", desc: "Comprehensive trade service with China. Origin-destination customs coordination, quality management and door-to-door logistics for Latin American SMEs." },
+        { title: "Warehousing & Distribution", desc: "Storage and distribution solutions in strategic locations (Argentina, USA, Brazil). Integrated inventory, picking and dispatch." }
+      ]
+    },
+    clientes: {
+      tag: "Clients",
+      title: "Trusted ",
+      titleHighlight: "by many",
+      subtitle: "Companies from various sectors trust CargoNet Group for their international trade operations. Our experience is their best guarantee.",
+      items: [
+        { text: "Logistics and distribution companies in Argentina, Brazil and the USA that outsource their international operations." },
+        { text: "Exporting SMEs from Latin America looking to expand their reach to markets in Europe, Asia and North America." },
+        { text: "Multinational corporations that require integrated supply chain solutions with regional presence." },
+        { text: "Agro-industrial companies that need specialized transport and efficient customs management." },
+        { text: "Tech startups and scaleups with foreign trade operations that require agility and reliability." },
+        { text: "Trade associations and chambers of commerce that trust our experience to advise their members." }
+      ]
+    },
+    casos: {
+      tag: "Success Stories",
+      title: "Success ",
+      titleHighlight: "stories",
+      subtitle: "Discover some cases where our experience in international logistics made a difference for our clients.",
+      items: [
+        { title: "Expansion to the USA for an Argentine manufacturer", desc: "We accompanied an Argentine metalworking SME in its export process to the United States. We managed all customs clearance, multimodal logistics and required certifications. Today they export 3 containers monthly." },
+        { title: "Supply chain optimization for Brazilian retail", desc: "We redesigned the supply chain of a Brazilian retail chain with operations in Argentina. We reduced transit times by 30% and total logistics costs by 22%." },
+        { title: "Argentina-China logistics corridor", desc: "We implemented a door-to-door service for an agricultural cooperative seeking to export to China. We coordinated quality controls, phytosanitary documentation and ocean logistics with real-time tracking." },
+        { title: "Strategic consulting for regional expansion", desc: "We advised a Uruguayan technology company on its expansion plan to Brazil and Mexico. We designed their logistics network, identified strategic partners and optimized their customs processes." }
+      ]
     },
     hero: {
       badge: "CEO & Founder of CargoNet Group",

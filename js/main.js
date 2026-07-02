@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initLoadingBar();
   initNavbar();
-  initHeroGlobe();
+  // heroGlobe removed — video background used instead
   initScrollReveal();
   initTheme();
   initLanguage();
@@ -100,11 +100,14 @@ function applyTranslations() {
   if (!t) return;
 
   // Nav
-  setText('nav-about', t.nav.about);
-  setText('nav-trajectory', t.nav.trajectory);
+  setText('nav-inicio', t.nav.inicio);
+  setText('nav-trayectoria', t.nav.trayectoria);
+  setText('nav-servicios', t.nav.servicios);
+  setText('nav-clientes', t.nav.clientes);
+  setText('nav-empresa', t.nav.empresa);
+  setText('nav-casos', t.nav.casos);
   setText('nav-blog', t.nav.blog);
-  setText('nav-social', t.nav.social);
-  setText('nav-contact', t.nav.contact);
+  setText('nav-contacto', t.nav.contacto);
 
   // Hero
   setText('hero-badge', t.hero.badge);
@@ -182,6 +185,46 @@ function applyTranslations() {
   setText('contact-title-highlight', t.contact.titleHighlight);
   setText('contact-desc', t.contact.desc);
   setText('contact-btn', t.contact.btn);
+
+  // Servicios page
+  setText('servicios-tag', t.servicios.tag);
+  setText('servicios-title', t.servicios.title);
+  setText('servicios-title-highlight', t.servicios.titleHighlight);
+  setText('servicios-subtitle', t.servicios.subtitle);
+  const serviciosCards = document.querySelectorAll('.servicio-card');
+  serviciosCards.forEach((card, i) => {
+    if (t.servicios.items[i]) {
+      const d = t.servicios.items[i];
+      card.querySelector('h3').textContent = d.title;
+      card.querySelector('p').textContent = d.desc;
+    }
+  });
+
+  // Clientes page
+  setText('clientes-tag', t.clientes.tag);
+  setText('clientes-title', t.clientes.title);
+  setText('clientes-title-highlight', t.clientes.titleHighlight);
+  setText('clientes-subtitle', t.clientes.subtitle);
+  const clientesItems = document.querySelectorAll('.cliente-item');
+  clientesItems.forEach((item, i) => {
+    if (t.clientes.items[i]) {
+      item.querySelector('p').textContent = t.clientes.items[i].text;
+    }
+  });
+
+  // Casos page
+  setText('casos-tag', t.casos.tag);
+  setText('casos-title', t.casos.title);
+  setText('casos-title-highlight', t.casos.titleHighlight);
+  setText('casos-subtitle', t.casos.subtitle);
+  const casosCards = document.querySelectorAll('.caso-card');
+  casosCards.forEach((card, i) => {
+    if (t.casos.items[i]) {
+      const d = t.casos.items[i];
+      card.querySelector('h3').textContent = d.title;
+      card.querySelector('p').textContent = d.desc;
+    }
+  });
 
   // Footer
   setHtml('footer-i18n', t.footer);
