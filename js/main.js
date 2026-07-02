@@ -267,6 +267,75 @@ function applyTranslations() {
     }
   }
 
+  // Vision
+  setText('vision-tag', t.vision.tag);
+  setText('vision-title', t.vision.title);
+  setText('vision-title-highlight', t.vision.titleHighlight);
+  setHtml('vision-p1', t.vision.p1);
+  setHtml('vision-p2', t.vision.p2);
+
+  // Pilares
+  setText('pilares-tag', t.pilares.tag);
+  setText('pilares-title', t.pilares.title);
+  setText('pilares-title-highlight', t.pilares.titleHighlight);
+  setText('pilares-subtitle', t.pilares.subtitle);
+  setText('pilar1-title', t.pilares.pilar1.title);
+  setHtml('pilar1-desc', t.pilares.pilar1.desc);
+  setText('pilar2-title', t.pilares.pilar2.title);
+  setHtml('pilar2-desc', t.pilares.pilar2.desc);
+  setText('pilar3-title', t.pilares.pilar3.title);
+  setHtml('pilar3-desc', t.pilares.pilar3.desc);
+
+  // Modelo
+  setText('modelo-tag', t.modelo.tag);
+  setText('modelo-title', t.modelo.title);
+  setText('modelo-title-highlight', t.modelo.titleHighlight);
+  setText('modelo-subtitle', t.modelo.subtitle);
+  const modeloPhases = document.querySelectorAll('.modelo-phase');
+  modeloPhases.forEach((phase, i) => {
+    if (t.modelo.phases[i]) {
+      phase.querySelector('h3').textContent = t.modelo.phases[i].title;
+      phase.querySelector('p').textContent = t.modelo.phases[i].desc;
+    }
+  });
+
+  // Infra
+  setText('infra-tag', t.infra.tag);
+  setText('infra-title', t.infra.title);
+  setText('infra-title-highlight', t.infra.titleHighlight);
+  setText('infra-subtitle', t.infra.subtitle);
+  const oficinaCards = document.querySelectorAll('.oficina-card');
+  oficinaCards.forEach((card, i) => {
+    if (t.infra.oficinas[i]) {
+      card.querySelector('h3').textContent = t.infra.oficinas[i].title;
+      card.querySelector('p').textContent = t.infra.oficinas[i].desc;
+    }
+  });
+
+  // Especializacion
+  setText('especializacion-tag', t.especializacion.tag);
+  setText('especializacion-title', t.especializacion.title);
+  setText('especializacion-title-highlight', t.especializacion.titleHighlight);
+  setHtml('especializacion-p1', t.especializacion.p1);
+  setHtml('especializacion-p2', t.especializacion.p2);
+
+  // Diferenciadores
+  setText('diferenciadores-tag', t.diferenciadores.tag);
+  setText('diferenciadores-title', t.diferenciadores.title);
+  setText('diferenciadores-title-highlight', t.diferenciadores.titleHighlight);
+  setText('diferenciadores-subtitle', t.diferenciadores.subtitle);
+  const difItems = document.querySelectorAll('.diferenciador-item');
+  difItems.forEach((item, i) => {
+    if (t.diferenciadores.items[i]) {
+      item.querySelector('h3').textContent = t.diferenciadores.items[i].title;
+      item.querySelector('p').textContent = t.diferenciadores.items[i].desc;
+    }
+  });
+
+  // Quote
+  setHtml('quote-text', t.quote.text);
+  setHtml('quote-author', t.quote.author);
+
   // Footer
   setHtml('footer-i18n', t.footer);
 }

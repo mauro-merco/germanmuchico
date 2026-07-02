@@ -1035,3 +1035,283 @@ footer .heart { color: var(--accent); }
   z-index: 9999;
   transition: width 0.3s ease;
 }
+
+/* ===== VISIÓN SECTION ===== */
+#vision-section {
+  background: var(--bg-gradient-2);
+}
+
+.vision-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.vision-content p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin-bottom: 1.2rem;
+}
+
+/* ===== PILARES SECTION ===== */
+#pilares-section {
+  background: var(--bg-gradient-1);
+}
+
+.pilares-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pilar-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 2.5rem 1.8rem;
+  text-align: center;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.pilar-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--accent-gradient);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.pilar-card:hover::before { opacity: 1; }
+
+.pilar-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.pilar-icon {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+}
+
+.pilar-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-primary);
+}
+
+.pilar-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* ===== MODELO CONSULTIVO ===== */
+#modelo-section {
+  background: var(--bg-gradient-2);
+}
+
+.modelo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.modelo-phase {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 2rem 1.8rem;
+  transition: var(--transition);
+  position: relative;
+}
+
+.modelo-phase:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-sm);
+}
+
+.phase-num {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+
+.modelo-phase h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-primary);
+}
+
+.modelo-phase p {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* ===== INFRAESTRUCTURA GLOBAL ===== */
+#infra-section {
+  background: var(--bg-gradient-1);
+}
+
+.infra-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.oficina-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.oficina-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.oficina-icon {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.oficina-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-primary);
+}
+
+.oficina-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* ===== ESPECIALIZACIÓN ===== */
+#especializacion-section {
+  background: var(--bg-gradient-2);
+}
+
+.especializacion-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.especializacion-content p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin-bottom: 1.2rem;
+}
+
+/* ===== DIFERENCIADORES ===== */
+#diferenciadores-section {
+  background: var(--bg-gradient-1);
+}
+
+.diferenciadores-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.diferenciador-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.diferenciador-item:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-sm);
+}
+
+.dif-icon {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.diferenciador-item h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-primary);
+}
+
+.diferenciador-item p {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+/* ===== QUOTE SECTION ===== */
+#quote-section {
+  background: var(--bg-gradient-2);
+  padding: 4rem 2rem;
+}
+
+.quote-block {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.quote-icon {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+}
+
+.quote-block p {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.quote-block footer {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* ===== RESPONSIVE NEW SECTIONS ===== */
+@media (max-width: 968px) {
+  .pilares-grid { grid-template-columns: 1fr; }
+  .modelo-grid { grid-template-columns: 1fr; }
+  .infra-grid { grid-template-columns: 1fr; }
+  .diferenciadores-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 576px) {
+  .diferenciadores-grid { grid-template-columns: 1fr; }
+  .quote-block p { font-size: 1.2rem; }
+}

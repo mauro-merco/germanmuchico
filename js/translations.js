@@ -21,7 +21,11 @@ const translations = {
         { title: "Consultoría en Supply Chain", desc: "Análisis y optimización de cadenas de suministro. Identificamos cuellos de botella, reducimos costos operativos y mejoramos la eficiencia logística de tu empresa." },
         { title: "Búsqueda de Proveedores", desc: "Identificación y selección de proveedores internacionales. Evaluamos calidad, confiabilidad y costos para conectar tu negocio con los mejores partners globales." },
         { title: "Trading con China", desc: "Servicio integral de comercio con China. Coordinación aduanera origen-destino, gestión de calidades y logística puerta a puerta para pymes latinoamericanas." },
-        { title: "Logística de Almacenamiento", desc: "Soluciones de almacenamiento y distribución en ubicaciones estratégicas (Argentina, USA, Brasil). Inventarios, picking y despacho integrados." }
+        { title: "Logística de Almacenamiento", desc: "Soluciones de almacenamiento y distribución en ubicaciones estratégicas (Argentina, USA, Brasil). Inventarios, picking y despacho integrados con seguimiento en tiempo real." },
+        { title: "Operativa Bancaria", desc: "Gestión de cartas de crédito, transferencias internacionales y confirmaciones bancarias. Optimizamos los procesos financieros integrados al comercio exterior." },
+        { title: "Asesoría Legal", desc: "Protección integral de intereses en comercio exterior y regulaciones aduaneras. Abogados especializados en contratos internacionales y cumplimiento normativo." },
+        { title: "Mudanzas Internacionales", desc: "Mudanzas corporativas y familiares con alcance global. Gestión aduanera completa, documentación integral y seguimiento personalizado en cada etapa." },
+        { title: "División de Perecederos", desc: "Especialistas en cargas perecederas multi-temperatura. Infraestructura de frío, cumplimiento FDA/SENASA/INVIMA y coordinación para flores, frutas, carnes y mariscos." }
       ]
     },
     clientes: {
@@ -47,7 +51,9 @@ const translations = {
         { title: "Expansión a EE.UU. para un fabricante argentino", desc: "Acompañamos a una pyme metalúrgica argentina en su proceso de exportación a Estados Unidos. Gestionamos todo el despacho aduanero, logística multimodal y certificaciones requeridas. Hoy exportan 3 contenedores mensuales." },
         { title: "Optimización de supply chain para retail brasileño", desc: "Rediseñamos la cadena de suministro de una cadena de retail brasileña con operaciones en Argentina. Redujimos un 30% los tiempos de tránsito y un 22% los costos logísticos totales." },
         { title: "Corredor logístico Argentina-China", desc: "Implementamos un servicio puerta a puerta para una cooperativa agrícola que buscaba exportar a China. Coordinamos controles de calidad, documentación fitosanitaria y logística oceánica con seguimiento en tiempo real." },
-        { title: "Consultoría estratégica para expansión regional", desc: "Asesoramos a una empresa de tecnología uruguaya en su plan de expansión a Brasil y México. Diseñamos su red logística, identificamos socios estratégicos y optimizamos sus procesos aduaneros." }
+        { title: "Consultoría estratégica para expansión regional", desc: "Asesoramos a una empresa de tecnología uruguaya en su plan de expansión a Brasil y México. Diseñamos su red logística, identificamos socios estratégicos y optimizamos sus procesos aduaneros." },
+        { title: "Logística de perecederos para exportador de flores", desc: "Implementamos una cadena de frío integral para un exportador de flores ecuatoriano hacia Estados Unidos y Europa. Coordinamos transporte refrigerado, certificaciones fitosanitarias y despacho aduanero. Redujimos pérdidas por temperatura en un 95%." },
+        { title: "Operativa bancaria para importador de maquinaria", desc: "Gestionamos cartas de crédito y financiamiento internacional para un importador argentino de maquinaria pesada alemana. Coordinamos con bancos en ambos países, optimizando plazos y reduciendo costos financieros en un 18%." }
       ]
     },
     hero: {
@@ -228,6 +234,70 @@ const translations = {
       desc: "¿Querés conectar conmigo? Estoy abierto a conversar sobre comercio internacional, alianzas estratégicas, consultoría o simplemente compartir experiencias sobre el fascinante mundo de la logística global.",
       btn: "Conectar en LinkedIn"
     },
+    vision: {
+      tag: "La Visión",
+      title: "Una visión que ",
+      titleHighlight: "transformó una industria",
+      p1: 'Después de décadas acumulando experiencia en el corazón del comercio internacional, Germán Muchico llegó a una conclusión fundamental: el mercado de logística y comercio exterior estaba fragmentado, ineficiente y no servía adecuadamente a sus clientes. Los proveedores tradicionales ofrecían servicios desarticulados: un transportista que movía carga sin entender estrategia, un despachante aduanal que procesaba documentos sin visión integral, un operador portuario que optimizaba solo sus márgenes, un banco que mediaba transacciones sin asesoría comercial.',
+      p2: 'El resultado: clientes desmembrados, costos ocultos, riesgos no identificados, oportunidades perdidas. Germán vio la oportunidad donde otros solo veían mercado. Comprendió que lo que faltaba era un socio verdaderamente consultivo—alguien que integrara toda la cadena logística bajo una lógica estratégica única. Fue entonces cuando decidió fundar CargoNet Group, no como un transportista más, sino como un acto de rebelión contra la ineficiencia sistémica del sector.'
+    },
+    pilares: {
+      tag: "Los Pilares",
+      title: "Los pilares de ",
+      titleHighlight: "CargoNet Group",
+      subtitle: "Tres principios fundamentales que guían cada operación, cada decisión y cada relación comercial.",
+      pilar1: { title: "Confianza como Moneda de Cambio", desc: 'Después de ver cómo la corrupción plagaba el sector, Germán estableció desde el día uno que CargoNet Group operaría con transparencia absoluta. Esto no fue debilidad competitiva—fue fortaleza. Los clientes serios querían trabajar con un socio confiable. Certificación ISO 37001, Código de Ética explícito y línea de denuncias confidencial (+54 11 5638-4944).' },
+      pilar2: { title: "Innovación como Brújula", desc: 'Germán sabía que el sector evolucionaba constantemente. CargoNet Group se construyó sobre la premisa de que la innovación no era un lujo, sino una obligación. Desde monitoreo en tiempo real hasta análisis predictivo, la tecnología es parte del ADN operativo. La complacencia mata a las organizaciones; la innovación constante las mantiene vivas.' },
+      pilar3: { title: "Excelencia Operativa", desc: 'Después de décadas viendo mediocridad, Germán simplemente no la toleraba. Cada empleado de CargoNet Group hereda este principio: no hay "suficientemente bueno"—solo hay excelencia o fracaso. La excelencia no es meta, es punto de partida. Se ve en cada detalle: puntualidad de entregas, precisión de documentación, calidad del asesoramiento.' }
+    },
+    modelo: {
+      tag: "Modelo de Trabajo",
+      title: "Modelo ",
+      titleHighlight: "consultivo",
+      subtitle: "Un enfoque radical que separó a CargoNet Group de la competencia: cuatro fases que transforman la logística en una verdadera ventaja competitiva.",
+      phases: [
+        { title: "Diagnóstico Profundo", desc: 'La conversación comienza con análisis profundo, no con propuestas de transporte. ¿Dónde se pierden costos? ¿Cuáles son tus riesgos regulatorios? ¿Qué oportunidades de optimización existen? Este enfoque—radical para la industria—marca la diferencia.' },
+        { title: "Diseño Estratégico", desc: 'Soluciones personalizadas para cada cliente. No hay plantillas ni soluciones genéricas. Cada organización recibe una arquitectura logística diseñada específicamente para sus realidades, desafíos y objetivos comerciales.' },
+        { title: "Ejecución de Calidad", desc: 'Coordinación perfecta, monitoreo riguroso y responsabilidad absoluta. Cuando CargoNet Group se compromete con un resultado, es una promesa. Cada eslabón de la cadena es gestionado con precisión quirúrgica.' },
+        { title: "Optimización Continua", desc: 'Cada proyecto es un proceso de mejora constante. Datos, resultados, métricas: se analizan continuamente para optimización incremental. En logística no hay destino final, solo evolución permanente.' }
+      ]
+    },
+    infra: {
+      tag: "Presencia Global",
+      title: "Infraestructura y ",
+      titleHighlight: "posicionamiento global",
+      subtitle: "CargoNet Group se construyó como una red logística multicontinental estratégicamente posicionada en los corredores de comercio más importantes del mundo.",
+      oficinas: [
+        { title: "Argentina — Base Operativa", desc: 'Oficina Central en Puerto Madero, CABA (Olga Cossettini 1545). Oficina en Aeropuerto Ezeiza para coordinación aduanera en tiempo real. Oficinas regionales en Mar del Plata y Mendoza para cobertura nacional completa.' },
+        { title: "Estados Unidos — El Puente con Norteamérica", desc: 'Cargo Net USA LLC en Miami, Florida (6735 NW 36th Street, STE 390). El principal hub logístico de América Latina hacia Estados Unidos. Coordinación directa con reguladores estadounidenses y servicio al corredor Latinoamérica-EE.UU.-Caribe.' },
+        { title: "Brasil — El Mayor Mercado Regional", desc: 'CargoNet Logistic Brasil en São Paulo (Iraí 438 CJ 71, Indianópolis). Presencia estratégica en el mayor mercado de América del Sur, capturando flujos comerciales bilaterales cruciales para la región.' }
+      ]
+    },
+    especializacion: {
+      tag: "Especialización",
+      title: "Especialización en ",
+      titleHighlight: "cargas complejas",
+      p1: 'Uno de los diferenciales más claros de CargoNet Group bajo la dirección de Germán Muchico es su especialización en cargas complejas—particularmente la División de Perecederos. Transportar mercancías perecederas a múltiples temperaturas (fresco, congelado, ambiente) requiere: infraestructura especializada (almacenes de temperatura controlada), expertise regulatoria (INVIMA, FDA, SENASA), coordinación perfecta (una cadena rota = mercancía perdida) y conocimiento de mercados específicos como flores, frutas, carnes, lácteos y mariscos.',
+      p2: 'Muchos competidores evitan estas cargas por su complejidad. Germán Muchico y CargoNet Group las abrazaron. ¿Por qué? Porque precisamente donde hay complejidad hay diferenciación. Y porque los clientes dispuestos a pagar por soluciones verdaderamente especializadas existen. Hoy, la División de Perecederos maneja volúmenes importantes desde toda la región hacia mercados globales, posicionando a CargoNet Group como el socio logístico de confianza para operadores premium que no pueden fallar.'
+    },
+    diferenciadores: {
+      tag: "Diferenciadores",
+      title: "Por qué ",
+      titleHighlight: "CargoNet Group destaca",
+      subtitle: "En un sector lleno de competidores, estas son las razones claras que nos diferencian y nos posicionan como líderes.",
+      items: [
+        { title: "Consultoría Verdadera", desc: "Somos consultores que ejecutamos soluciones logísticas. No solo movemos carga, transformamos cadenas de suministro. La diferencia es fundamental." },
+        { title: "Reputación Acumulada", desc: "La reputación de Germán Muchico abre puertas, genera confianza y atrae clientes premium. Es el activo más valioso de CargoNet Group, construido durante décadas." },
+        { title: "Infraestructura Multicontinental", desc: "Posicionamiento estratégico en Argentina, Estados Unidos y Brasil para servir los corredores comerciales más dinámicos de América con presencia local real." },
+        { title: "Especialización en Complejidad", desc: "La División de Perecederos maneja cargas que competidores no pueden aceptar. Donde hay complejidad, hay diferenciación y valor agregado." },
+        { title: "Innovación Tecnológica", desc: "Monitoreo en tiempo real, análisis predictivo y automatización de procesos. La tecnología no es un accesorio, es parte del core operativo de CargoNet Group." },
+        { title: "Ética Inquebrantable", desc: "ISO 37001, Código de Ética explícito, línea de denuncias confidencial. CargoNet Group opera con absoluta transparencia en un sector donde la corrupción es común." }
+      ]
+    },
+    quote: {
+      text: "Transformamos desafíos en oportunidades. Juntos, construimos éxito global.",
+      author: "— Germán Muchico, Fundador y CEO de CargoNet Group"
+    },
     footer: 'Construido con <i class="fas fa-heart heart"></i> y pasión por la logística global'
   },
 
@@ -253,7 +323,11 @@ const translations = {
         { title: "Supply Chain Consulting", desc: "Analysis and optimization of supply chains. We identify bottlenecks, reduce operating costs and improve your company's logistics efficiency." },
         { title: "Supplier Sourcing", desc: "Identification and selection of international suppliers. We evaluate quality, reliability and costs to connect your business with the best global partners." },
         { title: "Trading with China", desc: "Comprehensive trade service with China. Origin-destination customs coordination, quality management and door-to-door logistics for Latin American SMEs." },
-        { title: "Warehousing & Distribution", desc: "Storage and distribution solutions in strategic locations (Argentina, USA, Brazil). Integrated inventory, picking and dispatch." }
+        { title: "Warehousing & Distribution", desc: "Storage and distribution solutions in strategic locations (Argentina, USA, Brazil). Integrated inventory, picking and dispatch with real-time tracking." },
+        { title: "Banking Operations", desc: "Management of letters of credit, international transfers and bank confirmations. We optimize financial processes integrated with foreign trade." },
+        { title: "Legal Advisory", desc: "Comprehensive protection of interests in foreign trade and customs regulations. Specialized lawyers in international contracts and regulatory compliance." },
+        { title: "International Moves", desc: "Corporate and family moves with global reach. Complete customs management, comprehensive documentation and personalized tracking at every stage." },
+        { title: "Perishables Division", desc: "Specialists in multi-temperature perishable cargo. Cold chain infrastructure, FDA/SENASA/INVIMA compliance and coordination for flowers, fruits, meats and seafood." }
       ]
     },
     clientes: {
@@ -279,7 +353,9 @@ const translations = {
         { title: "Expansion to the USA for an Argentine manufacturer", desc: "We accompanied an Argentine metalworking SME in its export process to the United States. We managed all customs clearance, multimodal logistics and required certifications. Today they export 3 containers monthly." },
         { title: "Supply chain optimization for Brazilian retail", desc: "We redesigned the supply chain of a Brazilian retail chain with operations in Argentina. We reduced transit times by 30% and total logistics costs by 22%." },
         { title: "Argentina-China logistics corridor", desc: "We implemented a door-to-door service for an agricultural cooperative seeking to export to China. We coordinated quality controls, phytosanitary documentation and ocean logistics with real-time tracking." },
-        { title: "Strategic consulting for regional expansion", desc: "We advised a Uruguayan technology company on its expansion plan to Brazil and Mexico. We designed their logistics network, identified strategic partners and optimized their customs processes." }
+        { title: "Strategic consulting for regional expansion", desc: "We advised a Uruguayan technology company on its expansion plan to Brazil and Mexico. We designed their logistics network, identified strategic partners and optimized their customs processes." },
+        { title: "Perishables logistics for flower exporter", desc: "We implemented an integral cold chain for an Ecuadorian flower exporter to the United States and Europe. We coordinated refrigerated transport, phytosanitary certifications and customs clearance. Reduced temperature losses by 95%." },
+        { title: "Banking operations for machinery importer", desc: "We managed letters of credit and international financing for an Argentine importer of German heavy machinery. Coordinated with banks in both countries, optimizing timelines and reducing financial costs by 18%." }
       ]
     },
     hero: {
@@ -459,6 +535,70 @@ const translations = {
       titleHighlight: "global logistics",
       desc: "Want to connect with me? I'm open to talk about international trade, strategic alliances, consulting, or simply share experiences about the fascinating world of global logistics.",
       btn: "Connect on LinkedIn"
+    },
+    vision: {
+      tag: "The Vision",
+      title: "A vision that ",
+      titleHighlight: "transformed an industry",
+      p1: 'After decades of accumulating experience at the heart of international trade, Germán Muchico reached a fundamental conclusion: the logistics and foreign trade market was fragmented, inefficient, and not adequately serving its clients. Traditional providers offered disjointed services: a carrier moving cargo without understanding strategy, a customs broker processing documents without integral vision, a port operator optimizing only their margins, a bank mediating transactions without commercial advice.',
+      p2: 'The result: dismembered clients, hidden costs, unidentified risks, lost opportunities. Germán saw opportunity where others only saw a market. He understood that what was missing was a truly consultative partner—someone who would integrate the entire logistics chain under a single strategic logic. That was when he decided to found CargoNet Group, not as another carrier, but as an act of rebellion against the systemic inefficiency of the sector.'
+    },
+    pilares: {
+      tag: "The Pillars",
+      title: "The pillars of ",
+      titleHighlight: "CargoNet Group",
+      subtitle: "Three fundamental principles that guide every operation, every decision, and every business relationship.",
+      pilar1: { title: "Trust as Currency", desc: 'After seeing how corruption plagued the sector, Germán established from day one that CargoNet Group would operate with absolute transparency. This was not a competitive weakness—it was a strength. Serious clients wanted to work with a trustworthy partner. ISO 37001 certification, explicit Code of Ethics, and confidential whistleblower line (+54 11 5638-4944).' },
+      pilar2: { title: "Innovation as Compass", desc: 'Germán knew the sector was constantly evolving. CargoNet Group was built on the premise that innovation was not a luxury, but an obligation. From real-time monitoring to predictive analytics, technology is part of the operational DNA. Complacency kills organizations; constant innovation keeps them alive.' },
+      pilar3: { title: "Operational Excellence", desc: 'After decades of seeing mediocrity, Germán simply would not tolerate it. Every CargoNet Group employee inherits this principle: there is no "good enough"—only excellence or failure. Excellence is not the goal, it is the starting point. It shows in every detail: delivery punctuality, documentation precision, advisory quality.' }
+    },
+    modelo: {
+      tag: "Work Model",
+      title: "Consultative ",
+      titleHighlight: "model",
+      subtitle: "A radical approach that set CargoNet Group apart from the competition: four phases that transform logistics into a true competitive advantage.",
+      phases: [
+        { title: "Deep Diagnosis", desc: 'The conversation begins with deep analysis, not transport proposals. Where are costs being lost? What are your regulatory risks? What optimization opportunities exist? This approach—radical for the industry—makes all the difference.' },
+        { title: "Strategic Design", desc: 'Customized solutions for each client. No templates or generic solutions. Each organization receives a logistics architecture designed specifically for its realities, challenges and business objectives.' },
+        { title: "Quality Execution", desc: 'Perfect coordination, rigorous monitoring and absolute accountability. When CargoNet Group commits to a result, it is a promise. Every link in the chain is managed with surgical precision.' },
+        { title: "Continuous Optimization", desc: 'Every project is a process of constant improvement. Data, results, metrics: they are continuously analyzed for incremental optimization. In logistics there is no final destination, only permanent evolution.' }
+      ]
+    },
+    infra: {
+      tag: "Global Presence",
+      title: "Infrastructure and ",
+      titleHighlight: "global positioning",
+      subtitle: "CargoNet Group was built as a multicontinental logistics network strategically positioned in the most important trade corridors in the world.",
+      oficinas: [
+        { title: "Argentina — Operational Base", desc: 'Head office in Puerto Madero, Buenos Aires (Olga Cossettini 1545). Ezeiza Airport office for real-time customs coordination. Regional offices in Mar del Plata and Mendoza for complete national coverage.' },
+        { title: "United States — The Bridge to North America", desc: 'Cargo Net USA LLC in Miami, Florida (6735 NW 36th Street, STE 390). The main logistics hub from Latin America to the United States. Direct coordination with US regulators and service to the Latin America-US-Caribbean corridor.' },
+        { title: "Brazil — The Largest Regional Market", desc: 'CargoNet Logistic Brasil in São Paulo (Iraí 438 CJ 71, Indianópolis). Strategic presence in the largest market in South America, capturing crucial bilateral trade flows for the region.' }
+      ]
+    },
+    especializacion: {
+      tag: "Specialization",
+      title: "Specialization in ",
+      titleHighlight: "complex cargo",
+      p1: 'One of the clearest differentiators of CargoNet Group under Germán Muchico\'s leadership is its specialization in complex cargo—particularly the Perishables Division. Transporting perishable goods at multiple temperatures (fresh, frozen, ambient) requires: specialized infrastructure (temperature-controlled warehouses), regulatory expertise (INVIMA, FDA, SENASA), perfect coordination (a broken chain = lost merchandise) and knowledge of specific markets such as flowers, fruits, meats, dairy and seafood.',
+      p2: 'Many competitors avoid these loads due to their complexity. Germán Muchico and CargoNet Group embraced them. Why? Because precisely where there is complexity, there is differentiation. And because clients willing to pay for truly specialized solutions exist. Today, the Perishables Division handles significant volumes from across the region to global markets, positioning CargoNet Group as the trusted logistics partner for premium operators who cannot afford to fail.'
+    },
+    diferenciadores: {
+      tag: "Differentiators",
+      title: "Why ",
+      titleHighlight: "CargoNet Group stands out",
+      subtitle: "In a sector full of competitors, these are the clear reasons that set us apart and position us as leaders.",
+      items: [
+        { title: "True Consulting", desc: "We are consultants who execute logistics solutions. We don't just move cargo, we transform supply chains. The difference is fundamental." },
+        { title: "Accumulated Reputation", desc: "Germán Muchico's reputation opens doors, generates trust and attracts premium clients. It is CargoNet Group's most valuable asset, built over decades." },
+        { title: "Multicontinental Infrastructure", desc: "Strategic positioning in Argentina, the United States and Brazil to serve the most dynamic trade corridors in the Americas with real local presence." },
+        { title: "Specialization in Complexity", desc: "The Perishables Division handles cargo that competitors cannot accept. Where there is complexity, there is differentiation and added value." },
+        { title: "Technological Innovation", desc: "Real-time monitoring, predictive analytics and process automation. Technology is not an accessory, it is part of CargoNet Group's operational core." },
+        { title: "Unwavering Ethics", desc: "ISO 37001, explicit Code of Ethics, confidential whistleblower line. CargoNet Group operates with absolute transparency in a sector where corruption is common." }
+      ]
+    },
+    quote: {
+      text: "We transform challenges into opportunities. Together, we build global success.",
+      author: "— Germán Muchico, Founder and CEO of CargoNet Group"
     },
     footer: 'Built with <i class="fas fa-heart heart"></i> and passion for global logistics'
   }
