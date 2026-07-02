@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nota — Germán Muchico</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="loading-bar" id="loadingBar"></div>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">G<span>M</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" id="nav-inicio">Inicio</a></li>
+      <li><a href="trayectoria.html" id="nav-trayectoria">Trayectoria</a></li>
+      <li><a href="servicios.html" id="nav-servicios">Servicios</a></li>
+      <li><a href="clientes.html" id="nav-clientes">Clientes</a></li>
+      <li><a href="empresa.html" id="nav-empresa">Empresa</a></li>
+      <li><a href="casos-de-exito.html" id="nav-casos">Casos de Éxito</a></li>
+      <li><a href="blog.html" id="nav-blog" class="active">Blog</a></li>
+      <li><a href="contacto.html" id="nav-contacto">Contacto</a></li>
+    </ul>
+    <div class="nav-controls">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="theme-btn" id="themeBtn" title="Toggle theme">
+        <i class="theme-icon fas fa-moon"></i>
+      </button>
+      <div class="nav-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<article class="blog-post" id="blog-post-container">
+  <div class="blog-post-container">
+    <a href="blog.html" class="back-link" id="post-back">← Volver al Blog</a>
+    <div class="post-date" id="post-date"></div>
+    <h1 id="post-title"></h1>
+    <div class="post-divider"></div>
+    <div class="post-content" id="post-content"></div>
+    <div class="post-footer">
+      <span class="share-label">Compartir nota:</span>
+      <div class="share-links">
+        <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'_blank')" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" onclick="window.open('https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href),'_blank')" title="X"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href),'_blank')" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" onclick="window.open('https://wa.me/?text='+encodeURIComponent(location.href),'_blank')" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+</article>
+
+<footer>
+  <p id="footer-i18n">Construido con <i class="fas fa-heart heart"></i> y pasión por la logística global</p>
+</footer>
+
+<script src="js/translations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

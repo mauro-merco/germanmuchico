@@ -118,6 +118,16 @@ function applyTranslations() {
   setText('hero-btn-primary', t.hero.btnPrimary);
   setText('hero-btn-outline', t.hero.btnOutline);
 
+  // Home About
+  setText('home-about-tag', t.homeAbout.tag);
+  setText('home-about-title', t.homeAbout.title);
+  setText('home-about-title-highlight', t.homeAbout.titleHighlight);
+  setText('home-about-title-end', t.homeAbout.titleEnd);
+  setText('home-about-subtitle', t.homeAbout.subtitle);
+  setHtml('home-about-p1', t.homeAbout.p1);
+  setHtml('home-about-p2', t.homeAbout.p2);
+  setText('home-about-btn', t.homeAbout.btn);
+
   // About
   setText('about-tag', t.about.tag);
   setText('about-title', t.about.title);
@@ -167,6 +177,8 @@ function applyTranslations() {
       card.querySelector('.date').textContent = d.date;
       card.querySelector('h3').textContent = d.title;
       card.querySelector('p').textContent = d.desc;
+      const link = card.querySelector('.read-more');
+      if (link) link.href = 'blog-post.html?slug=' + d.slug;
     }
   });
 
@@ -225,6 +237,30 @@ function applyTranslations() {
       card.querySelector('p').textContent = d.desc;
     }
   });
+
+  // Blog Post
+  const blogPostContainer = document.getElementById('blog-post-container');
+  if (blogPostContainer) {
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get('slug');
+    let post = null;
+    for (const p of t.blog.posts) {
+      if (p.slug === slug) { post = p; break; }
+    }
+    if (post) {
+      setText('post-title', post.title);
+      setText('post-date', post.date);
+      setText('post-back', t.blog.backToBlog);
+      const contentEl = document.getElementById('post-content');
+      if (contentEl) {
+        contentEl.innerHTML = post.content.map(p => {
+          if (p.startsWith('<h2>')) return p;
+          return '<p>' + p + '</p>';
+        }).join('');
+      }
+      document.title = post.title + ' — Germán Muchico';
+    }
+  }
 
   // Footer
   setHtml('footer-i18n', t.footer);
