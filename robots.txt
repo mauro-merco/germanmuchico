@@ -1,0 +1,80 @@
+# robots.txt for https://germanmuchico.com/
+# Optimized for Traditional Search Engines (SEO) and Artificial Intelligence Platforms (LLM Crawlers)
+# Last Updated: July 8, 2026
+
+# ====================================================================
+# SECTION 1: GLOBAL CRAWLER INSTRUCTIONS
+# Welcomes all search engines and AI agents globally
+# ====================================================================
+
+User-agent: *
+Allow: /
+
+
+# ====================================================================
+# SECTION 2: EXPLICIT AI AGENTS & LLM CRAWLERS
+# Expressly welcoming and permitting LLM training and RAG Search agents
+# ====================================================================
+
+# OpenAI (ChatGPT, GPT-4, SearchGPT)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic (Claude, Claude-3.5, Claude-4)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+# Perplexity AI (RAG and Search Engine)
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI (Gemini, Google-Extended search assistant)
+User-agent: Google-Extended
+Allow: /
+
+# Apple (Applebot, Apple Intelligence / Siri Search)
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Cohere (Enterprise RAG & LLMs)
+User-agent: Cohere-ai
+Allow: /
+
+# Meta (Meta AI, Llama models)
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Common Crawl (AI training and research dataset)
+User-agent: CCBot
+Allow: /
+
+# ====================================================================
+# SECTION 3: SITEMAP & SEMANTIC INDEXING DIRECTIVES
+# Guiding both traditional SEO search engines and AI Crawlers to their references
+# ====================================================================
+
+# Traditional XML Sitemap for Google, Bing, DuckDuckGo, etc.
+Sitemap: https://germanmuchico.com/sitemap.xml
+
+# Dedicated Semantic LLM Documentation (For ChatGPT, Claude, Gemini, Perplexity)
+# This lets AI agents know exactly where their specialized structured documentation is located.
+Sitemap: https://germanmuchico.com/llms.txt
+Sitemap: https://germanmuchico.com/llms-full.txt
