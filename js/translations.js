@@ -322,6 +322,19 @@ const translations = {
       ctaTitleHighlight: "mis redes",
       ctaSubtitle: "Publico contenido regularmente sobre logística, comercio exterior y análisis de la coyuntura económica. No te lo pierdas."
     },
+    homeVideos: {
+      tag: "Multimedia",
+      title: "Mis ",
+      titleHighlight: "videos",
+      subtitle: "Entrevistas, charlas y análisis sobre logística internacional, comercio exterior y la coyuntura económica argentina.",
+      video1Title: "Germán Muchico — Logística y Comercio Exterior",
+      video1Desc: "Análisis sobre el estado del comercio internacional y el rol de Argentina en la cadena logística global.",
+      video2Title: "CargoNet Group — Soluciones Logísticas Integrales",
+      video2Desc: "Presentación de los servicios y la visión estratégica de CargoNet Group para el comercio exterior regional.",
+      video3Title: "El Futuro de la Logística en Latinoamérica",
+      video3Desc: "Perspectivas sobre la evolución de la cadena de suministro y las oportunidades para pymes en el comercio global.",
+      btn: "Ver todos los videos"
+    },
     footer: 'Construido con <i class="fas fa-heart heart"></i> y pasión por la logística global'
   },
 
@@ -647,6 +660,19 @@ const translations = {
       ctaTitle: "Follow me on ",
       ctaTitleHighlight: "my networks",
       ctaSubtitle: "I regularly post about logistics, foreign trade and economic analysis. Don't miss it."
+    },
+    homeVideos: {
+      tag: "Multimedia",
+      title: "My ",
+      titleHighlight: "videos",
+      subtitle: "Interviews, talks and analysis on international logistics, foreign trade and the Argentine economic landscape.",
+      video1Title: "Germán Muchico — International Logistics & Foreign Trade",
+      video1Desc: "Analysis of the state of international trade and Argentina's role in the global logistics chain.",
+      video2Title: "CargoNet Group — Comprehensive Logistics Solutions",
+      video2Desc: "Presentation of CargoNet Group's services and strategic vision for regional foreign trade.",
+      video3Title: "The Future of Logistics in Latin America",
+      video3Desc: "Perspectives on supply chain evolution and opportunities for SMEs in global trade.",
+      btn: "Watch all videos"
     },
     footer: 'Built with <i class="fas fa-heart heart"></i> and passion for global logistics'
   }

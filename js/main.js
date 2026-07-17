@@ -362,6 +362,19 @@ function applyTranslations() {
   setText('cta-title', t.multimedia.ctaTitle);
   setText('cta-title-highlight', t.multimedia.ctaTitleHighlight);
   setText('cta-subtitle', t.multimedia.ctaSubtitle);
+
+  // Home Videos
+  setText('home-videos-tag', t.homeVideos.tag);
+  setText('home-videos-title', t.homeVideos.title);
+  setText('home-videos-title-highlight', t.homeVideos.titleHighlight);
+  setText('home-videos-subtitle', t.homeVideos.subtitle);
+  setText('home-video1-title', t.homeVideos.video1Title);
+  setText('home-video1-desc', t.homeVideos.video1Desc);
+  setText('home-video2-title', t.homeVideos.video2Title);
+  setText('home-video2-desc', t.homeVideos.video2Desc);
+  setText('home-video3-title', t.homeVideos.video3Title);
+  setText('home-video3-desc', t.homeVideos.video3Desc);
+  setText('home-videos-btn', t.homeVideos.btn);
 }
 
 function setText(id, text) {

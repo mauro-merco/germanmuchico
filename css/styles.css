@@ -1308,6 +1308,10 @@ footer .heart { color: var(--accent); }
   background: var(--bg-gradient-2);
 }
 
+#home-videos-section {
+  background: var(--bg-gradient-2);
+}
+
 #multimedia-perfiles {
   background: var(--bg-gradient-1);
 }
