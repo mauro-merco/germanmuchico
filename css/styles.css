@@ -1303,15 +1303,193 @@ footer .heart { color: var(--accent); }
   padding: 0;
 }
 
+/* ===== MULTIMEDIA PAGE ===== */
+#multimedia-videos {
+  background: var(--bg-gradient-2);
+}
+
+#multimedia-perfiles {
+  background: var(--bg-gradient-1);
+}
+
+#multimedia-cta {
+  background: var(--bg-gradient-2);
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+.video-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.video-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-info {
+  padding: 1.2rem 1.5rem 1.5rem;
+}
+
+.video-info h3 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.video-info p {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+/* ===== PROFILE CARDS ===== */
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 1.8rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.profile-card.youtube::before { background: linear-gradient(135deg, #ff0000, #cc0000); }
+.profile-card.linkedin::before { background: linear-gradient(135deg, #0a66c2, #004182); }
+.profile-card.instagram::before { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+
+.profile-card:hover::before { opacity: 1; }
+
+.profile-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow);
+}
+
+.profile-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: var(--white);
+  margin-bottom: 1.2rem;
+  transition: var(--transition);
+}
+
+.profile-icon.youtube { background: linear-gradient(135deg, #ff0000, #cc0000); }
+.profile-icon.linkedin { background: linear-gradient(135deg, #0a66c2, #004182); }
+.profile-icon.instagram { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+
+.profile-card:hover .profile-icon {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+}
+
+.profile-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+  color: var(--text-primary);
+}
+
+.profile-handle {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.profile-desc {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.profile-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  transition: var(--transition);
+}
+
+.profile-card:hover .profile-cta {
+  letter-spacing: 0.5px;
+}
+
+.multimedia-social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* ===== RESPONSIVE NEW SECTIONS ===== */
 @media (max-width: 968px) {
   .pilares-grid { grid-template-columns: 1fr; }
   .modelo-grid { grid-template-columns: 1fr; }
   .infra-grid { grid-template-columns: 1fr; }
   .diferenciadores-grid { grid-template-columns: repeat(2, 1fr); }
+  .profiles-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+  .videos-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 576px) {
   .diferenciadores-grid { grid-template-columns: 1fr; }
   .quote-block p { font-size: 1.2rem; }
+  .multimedia-social-links { flex-direction: column; align-items: center; }
 }

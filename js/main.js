@@ -107,6 +107,7 @@ function applyTranslations() {
   setText('nav-empresa', t.nav.empresa);
   setText('nav-casos', t.nav.casos);
   setText('nav-blog', t.nav.blog);
+  setText('nav-multimedia', t.nav.multimedia);
   setText('nav-contacto', t.nav.contacto);
 
   // Hero
@@ -338,6 +339,29 @@ function applyTranslations() {
 
   // Footer
   setHtml('footer-i18n', t.footer);
+
+  // Multimedia
+  setText('multimedia-title', t.multimedia.title);
+  setText('multimedia-title-highlight', t.multimedia.titleHighlight);
+  setText('multimedia-subtitle', t.multimedia.subtitle);
+  setText('videos-tag', t.multimedia.videosTag);
+  setText('videos-title', t.multimedia.videosTitle);
+  setText('videos-title-highlight', t.multimedia.videosTitleHighlight);
+  setText('videos-subtitle', t.multimedia.videosSubtitle);
+  setText('video1-title', t.multimedia.video1Title);
+  setText('video1-desc', t.multimedia.video1Desc);
+  setText('video2-title', t.multimedia.video2Title);
+  setText('video2-desc', t.multimedia.video2Desc);
+  setText('video3-title', t.multimedia.video3Title);
+  setText('video3-desc', t.multimedia.video3Desc);
+  setText('perfiles-tag', t.multimedia.perfilesTag);
+  setText('perfiles-title', t.multimedia.perfilesTitle);
+  setText('perfiles-title-highlight', t.multimedia.perfilesTitleHighlight);
+  setText('perfiles-subtitle', t.multimedia.perfilesSubtitle);
+  setText('cta-tag', t.multimedia.ctaTag);
+  setText('cta-title', t.multimedia.ctaTitle);
+  setText('cta-title-highlight', t.multimedia.ctaTitleHighlight);
+  setText('cta-subtitle', t.multimedia.ctaSubtitle);
 }
 
 function setText(id, text) {
