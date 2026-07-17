@@ -140,6 +140,90 @@ body {
   background: rgba(0,119,204,0.08);
 }
 
+/* ===== NAV DROPDOWN ===== */
+.has-dropdown {
+  position: relative;
+}
+
+.has-dropdown > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.dropdown-arrow {
+  font-size: 0.55rem;
+  transition: var(--transition);
+}
+
+.has-dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background: var(--navbar-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--navbar-border);
+  border-radius: var(--radius-sm);
+  list-style: none;
+  padding: 0.4rem;
+  margin-top: 0.5rem;
+  box-shadow: var(--shadow);
+  z-index: 100;
+}
+
+.has-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 6px;
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li a.active {
+  background: rgba(0,119,204,0.08);
+  color: var(--text-primary);
+}
+
+/* ===== NAV SOCIAL ===== */
+.nav-social {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.nav-social a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: var(--transition);
+}
+
+.nav-social a:hover {
+  color: var(--text-primary);
+  background: rgba(0,119,204,0.08);
+}
+
+.nav-social a[title="YouTube"]:hover { color: #ff0000; }
+.nav-social a[title="LinkedIn"]:hover { color: #0a66c2; }
+.nav-social a[title="Instagram"]:hover { color: #e4405f; }
+
 .nav-controls {
   display: flex;
   align-items: center;
@@ -755,6 +839,36 @@ footer {
   border-top: 1px solid var(--border-color);
 }
 
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social a {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.footer-social a:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.footer-social a[title="YouTube"]:hover { color: #ff0000; border-color: #ff0000; }
+.footer-social a[title="LinkedIn"]:hover { color: #0a66c2; border-color: #0a66c2; }
+.footer-social a[title="Instagram"]:hover { color: #e4405f; border-color: #e4405f; }
+
 footer p {
   color: var(--text-secondary);
   font-size: 0.85rem;
@@ -822,6 +936,33 @@ footer .heart { color: var(--accent); }
 
   .nav-links.active { right: 0; }
   .nav-toggle { display: flex; z-index: 1001; }
+
+  .has-dropdown > a {
+    justify-content: center;
+  }
+
+  .dropdown-menu {
+    position: static;
+    background: transparent;
+    backdrop-filter: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin-top: 0.3rem;
+    display: none;
+  }
+
+  .has-dropdown.open .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu li a {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    color: var(--text-secondary);
+  }
+
+  .nav-social { display: none; }
 
   .nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
   .nav-toggle.active span:nth-child(2) { opacity: 0; }

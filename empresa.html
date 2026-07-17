@@ -21,17 +21,26 @@
   <div class="nav-container">
     <a href="index.html" class="nav-logo">G<span>M</span></a>
     <ul class="nav-links">
-      <li><a href="index.html" id="nav-inicio">Inicio</a></li>
-      <li><a href="trayectoria.html" id="nav-trayectoria">Trayectoria</a></li>
+      <li class="has-dropdown">
+        <a href="#" id="nav-sobremi">Sobre Mí <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="trayectoria.html" id="nav-trayectoria">Trayectoria</a></li>
+          <li><a href="casos-de-exito.html" id="nav-casos">Casos de Éxito</a></li>
+        </ul>
+      </li>
       <li><a href="servicios.html" id="nav-servicios">Servicios</a></li>
       <li><a href="clientes.html" id="nav-clientes">Clientes</a></li>
       <li><a href="empresa.html" id="nav-empresa" class="active">Empresa</a></li>
-      <li><a href="casos-de-exito.html" id="nav-casos">Casos de Éxito</a></li>
       <li><a href="blog.html" id="nav-blog">Blog</a></li>
       <li><a href="multimedia.html" id="nav-multimedia">Multimedia</a></li>
       <li><a href="contacto.html" id="nav-contacto">Contacto</a></li>
     </ul>
     <div class="nav-controls">
+      <div class="nav-social">
+        <a href="https://www.youtube.com/@germuchico" target="_blank" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/german-muchico" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/germanmuchico/" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
       <div class="lang-toggle">
         <button class="lang-btn active" data-lang="es">ES</button>
         <button class="lang-btn" data-lang="en">EN</button>
@@ -199,6 +208,11 @@
 </section>
 
 <footer>
+  <div class="footer-social">
+    <a href="https://www.youtube.com/@germuchico" target="_blank" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.linkedin.com/in/german-muchico" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/germanmuchico/" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
   <p id="footer-i18n">Construido con <i class="fas fa-heart heart"></i> y pasión por la logística global</p>
 </footer>
 

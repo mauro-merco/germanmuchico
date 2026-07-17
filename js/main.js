@@ -38,6 +38,17 @@ function initNavbar() {
       navLinks.classList.remove('active');
     });
   });
+
+  // Mobile dropdown toggle
+  document.querySelectorAll('.has-dropdown').forEach(dropdown => {
+    const link = dropdown.querySelector(':scope > a');
+    link.addEventListener('click', (e) => {
+      if (window.innerWidth <= 968) {
+        e.preventDefault();
+        dropdown.classList.toggle('open');
+      }
+    });
+  });
 }
 
 // ===== SCROLL REVEAL =====
@@ -100,7 +111,7 @@ function applyTranslations() {
   if (!t) return;
 
   // Nav
-  setText('nav-inicio', t.nav.inicio);
+  setText('nav-sobremi', t.nav.sobremi);
   setText('nav-trayectoria', t.nav.trayectoria);
   setText('nav-servicios', t.nav.servicios);
   setText('nav-clientes', t.nav.clientes);

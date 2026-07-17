@@ -1,7 +1,7 @@
 const translations = {
   es: {
     nav: {
-      inicio: "Inicio",
+      sobremi: "Sobre Mí",
       trayectoria: "Trayectoria",
       servicios: "Servicios",
       clientes: "Clientes",
@@ -340,7 +340,7 @@ const translations = {
 
   en: {
     nav: {
-      inicio: "Home",
+      sobremi: "About Me",
       trayectoria: "Career",
       servicios: "Services",
       clientes: "Clients",
