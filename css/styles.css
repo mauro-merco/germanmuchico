@@ -387,9 +387,71 @@ body {
 .hero-video .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   padding: 6rem 2rem 4rem;
+}
+
+.hero-layout {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-image-col {
+  flex-shrink: 0;
+}
+
+.hero-profile-img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(0,119,204,0.3);
+  box-shadow: 0 0 40px rgba(0,119,204,0.25);
+  transition: var(--transition);
+}
+
+.hero-profile-img:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 60px rgba(0,119,204,0.4);
+  transform: scale(1.02);
+}
+
+.hero-profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text-col {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-text-col .hero-buttons {
+  justify-content: flex-start;
+}
+
+.watermark-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  font-weight: 900;
+  color: rgba(255,255,255,0.03);
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(4px);
+}
+
+.light-mode .watermark-logo {
+  color: rgba(17,42,67,0.03);
 }
 
 .hero-video .hero-text {
@@ -920,6 +982,28 @@ footer .heart { color: var(--accent); }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 968px) {
+  .hero-layout {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .hero-image-col {
+    order: -1;
+  }
+  .hero-profile-img {
+    width: 200px;
+    height: 200px;
+  }
+  .hero-text-col {
+    text-align: center;
+  }
+  .hero-text-col .hero-buttons {
+    justify-content: center;
+  }
+  .watermark-logo {
+    font-size: 4rem;
+    letter-spacing: 4px;
+  }
   .hero-video h1 { font-size: 2.8rem; }
   .hero-video .hero-desc { margin: 0 auto 2rem; }
   .hero-video .hero-buttons { justify-content: center; }
