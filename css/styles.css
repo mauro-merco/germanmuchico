@@ -1221,6 +1221,16 @@ footer .heart { color: var(--accent); }
   margin-bottom: 1.5rem;
 }
 
+.blog-post .post-content ul {
+  margin: 0 0 1.5rem;
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.blog-post .post-content li {
+  margin-bottom: 0.5rem;
+}
+
 .blog-post .post-content h2 {
   font-size: 1.4rem;
   color: var(--text-primary);

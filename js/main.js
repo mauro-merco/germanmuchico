@@ -184,8 +184,8 @@ function applyTranslations() {
 
   const blogCards = document.querySelectorAll('.blog-card');
   blogCards.forEach((card, i) => {
-    if (t.blog.posts[i]) {
-      const d = t.blog.posts[i];
+    const d = t.blog.posts[i] || translations.es.blog.posts[i];
+    if (d) {
       card.querySelector('.date').textContent = d.date;
       card.querySelector('h3').textContent = d.title;
       card.querySelector('p').textContent = d.desc;
@@ -261,8 +261,11 @@ function applyTranslations() {
     const params = new URLSearchParams(window.location.search);
     const slug = params.get('slug');
     let post = null;
-    for (const p of t.blog.posts) {
-      if (p.slug === slug) { post = p; break; }
+    for (const list of [t.blog.posts, translations.es.blog.posts]) {
+      for (const p of list) {
+        if (p.slug === slug) { post = p; break; }
+      }
+      if (post) break;
     }
     if (post) {
       setText('post-title', post.title);
@@ -271,7 +274,7 @@ function applyTranslations() {
       const contentEl = document.getElementById('post-content');
       if (contentEl) {
         contentEl.innerHTML = post.content.map(p => {
-          if (p.startsWith('<h2>')) return p;
+          if (p.startsWith('<h2>') || p.startsWith('<ul>')) return p;
           return '<p>' + p + '</p>';
         }).join('');
       }
